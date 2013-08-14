@@ -1,0 +1,71 @@
+/* Reset */
+body, div, img {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.wrapper {
+	max-width: 800px;
+	max-height: 1280px;
+	border: none;
+	margin: 50px auto;
+}
+
+.arrow {
+	background: url(../img/arrow.png) no-repeat scroll center center transparent;
+    border: medium none;
+    height: 97px;
+    position: absolute;
+    right: 318px;
+    text-indent: -9999px;
+    top: 892px;
+    width: 67px;
+    -webkit-animation-name: arrow_move;
+    -moz-animation-name: arrow_move;
+    -o-animation-name: arrow_move;
+    animation-name: arrow_move;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;	
+    cursor: pointer;
+}
+
+@keyframes arrow_move {
+	from {
+		margin-left: 10px;
+	}
+	to {
+		margin-right: 10px;
+	}
+}
+
+@-webkit-keyframes arrow_move {
+	from {
+		margin-left: 10px;
+	}
+	to {
+		margin-right: 10px;
+	}
+}
+
+.continue {
+	background: url(../img/continue.png) no-repeat scroll center center transparent;
+    border: medium none;
+    height: 97px;
+    position: absolute;
+    right: 416px;
+    text-indent: -9999px;
+    top: 891px;
+    width: 159px;
+    cursor: pointer;
+}

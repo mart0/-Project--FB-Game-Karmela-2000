@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+	<div>
+		<img src="img/question_page.png" alt="Questions">
+	</div>
+	<div>	
+		<form action="">
+			<input type="checkbox" id="option1" class="checkbox" name="option" value="1"><img src="img/first_option.png" alt="First option" class="images">
+			<input type="checkbox" id="option2" class="checkbox" name="option" value="2"><img src="img/second_option.png" alt="Second option" class="images" checked>
+			<input type="checkbox" id="option3" class="checkbox" name="option" value="3"><img src="img/third_option.png" alt="Third option" class="images">
+			<button id="registration" disabled></button>
+		</form>
+	</div>
+  </div>
+  <script src="jquery-1.9.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$("#option1").on('click', function () {
+  			$("#option2").attr("disabled", true);
+  			$("#option3").attr("disabled", true);
+  			$("#registration").removeAttr("disabled");
+    });
+  		$("#option2").on('click', function () {
+  			$("#option1").attr("disabled", true);
+  			$("#option3").attr("disabled", true);
+  			$("#registration").removeAttr("disabled");
+    });
+  		$("#option3").on('click', function () {
+  			$("#option2").attr("disabled", true);
+  			$("#option1").attr("disabled", true);
+  			$("#registration").removeAttr("disabled");
+    });
+});
+  </script>
+</body>
+</html>

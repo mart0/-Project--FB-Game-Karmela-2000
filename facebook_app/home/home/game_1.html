@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="game_1">
+  <div class="wrapper">
+	<div style="width:725px;height:527px;top:240px ; left:17px;position:absolute">	
+		
+		<img src="img/1.png" id="first_box" alt="First box">
+	</div>
+ <button type="button" class="arrow"></button>
+		<button type="button" class="continue"></button>
+  </div>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$("#first_box").on('click', function () {
+  			$("#first_box").hide("fast");
+  			$("#arrow").removeAttr("disabled");
+  			$("#continue").removeAttr("disabled");
+    });
+});
+  </script>
+</body>
+</html>

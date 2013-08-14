@@ -1,0 +1,65 @@
+/* Reset */
+body, div, img {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.wrapper {
+	max-width: 800px;
+	max-height: 1280px;
+	border: none;
+	margin: 50px auto;
+}
+
+form {
+    position: relative;
+    top: -200px;
+}
+
+.checkbox {
+    border-radius: 3px; 
+    border: 1px solid black;
+    top: -200px;
+    width: 130px;
+    -moz-box-shadow: 10px black;
+    -webkit-box-shadow: 10px black;
+    -o-box-shadow: 10px black;
+    box-shadow: 10px black;
+}
+
+input[type=checkbox] {
+    -moz-box-shadow: 10px black;
+    -webkit-box-shadow: 10px black;
+    -o-box-shadow: 10px black;
+    box-shadow: 10px black;
+}
+
+.images {
+    top: -200px;
+    margin-bottom: -8px;  
+    margin-left: -40px;  
+}
+
+button:disabled {
+    background: url(../img/reg_button.png) no-repeat transparent;
+    height: 40px;
+    left: 300px;
+    position: relative;
+    top: 69px;
+    width: 173px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+button {
+    background: url(../img/reg_button.png) no-repeat transparent;
+    height: 40px;
+    left: 300px;
+    position: relative;
+    top: 69px;
+    width: 173px;
+    border: none;
+    cursor: pointer;
+}

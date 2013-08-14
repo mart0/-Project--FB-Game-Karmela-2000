@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+	<div>
+		<img src="img/game_1_page.png" alt="Game">
+	</div>
+	<div>	
+		<button id="arrow" disabled></button>
+		<button id="continue" disabled></button>
+		<img src="img/1.png" id="first_box" alt="First box">
+	</div>
+  </div>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$("#first_box").on('click', function () {
+  			$("#first_box").hide("fast");
+  			$("#arrow").removeAttr("disabled");
+  			$("#continue").removeAttr("disabled");
+    });
+});
+  </script>
+</body>
+</html>

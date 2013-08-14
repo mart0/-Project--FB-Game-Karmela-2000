@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+	<div>
+		<img src="img/registration_page.png" alt="Registration form">
+	</div>
+	<div>	
+		<form action="">
+			<input type="text" id="name_label" class="name" placeholder="&nbsp;&nbsp;&nbsp;Име" disabled="disabled">&nbsp;&nbsp;<input type="text" class="name" id="name_field"><br/><br/>
+			<input type="text" id="email_label" class="email" placeholder="&nbsp;&nbsp;&nbsp;E-mail" disabled="disabled">&nbsp;&nbsp;<input type="email" class="email" id="email_field" required placeholder="your_email@mail.com"><br/><br/>
+			<input type="text" id="address_label" class="address" placeholder="&nbsp;&nbsp;&nbsp;Адрес" disabled="disabled">&nbsp;&nbsp;<input type="text" class="address" id="address_field"><br/><br/>
+			<input type="checkbox" id="checkbox"><a href="">Съгласен съм с общите условия<br/>&nbsp;&nbsp;&nbsp;&nbsp; за участие в конкурса</a>
+			<button id="send_button" disabled></button>
+		</form>
+	</div>
+  </div>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$("#checkbox").on('click', function () {
+  		$("#send_button").removeAttr("disabled");
+    });
+});
+  </script>
+</body>
+</html>

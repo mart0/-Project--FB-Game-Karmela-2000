@@ -1,0 +1,19 @@
+/* Reset */
+body, div, img {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.wrapper {
+	max-width: 800px;
+	max-height: 1280px;
+	border: none;
+	margin: 50px auto;
+}
+
+#luck {
+	position: absolute;
+    right: 383px;
+    top: 422px;
+}
